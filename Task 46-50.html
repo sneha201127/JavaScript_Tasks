@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics</title>
+</head>
+<body>
+  <h1>Check the console for output!</h1>
+  <script>
+    // Task 46: 
+    function sum(a,b){    
+        return a+b;
+    }
+    let a=200;
+    let b=300;
+    console.log("sum of two numbers:",sum(a,b));
+
+    // Task 47: 
+    function area(l,b){
+        return l*b;
+    }
+    console.log("Area of the rectangle:" ,area(20,30));
+
+    // Task 48: 
+    function call(){
+           let num=100;
+           if(num%2==0){
+            console.log(`${num} is Even number`);
+           }else{
+            console.log(`${num} is Odd number`);
+           }
+    }
+    call();
+
+    // Task 49: 
+    function Empty(){
+        console.log("Empty function");
+    }
+    let res=Empty();
+    console.log(res);
+
+    // Task 50:
+    function greeting(name="Guest"){
+        console.log(`Hello!,Welcome ${name}!`);
+    }
+
+    greeting();
+    greeting("Sneha");
+  </script>
+</body>
+</html>

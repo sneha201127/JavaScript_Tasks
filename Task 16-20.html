@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Strict Mode</title>
+</head>
+<body>
+  <script>
+    //Task 16
+   let a="sneha";
+   const age=20;
+   var status="student";
+
+   console.log("name: ",a);
+   console.log("age: ",age);
+   console.log("status: ",status);
+   
+   var status="unmarried";
+   console.log("status :",status);
+
+  //Task 17
+  const number=21;
+  console.log("age: ",number);
+
+  try{
+    number=31;
+  }
+  catch(error){
+    alert("constant cannot be redeclared");
+  }
+
+  //Task 18
+  var assignment;
+  console.log("Uninitializing:",assignment);
+  
+  //Task 19
+  var num;
+  num=100;
+  num="javaScript";
+  num=true;
+
+  console.log("num:",typeof(num));
+  console.log("num:",typeof(num));
+  console.log("num:",typeof(num));
+
+  //Task 20
+  let Name = "Old";
+console.log("name:", Name);
+let rename = Name;h
+console.log("Rename:", rename);
+console.log("Name",Name);
+
+
+  </script>
+</body>
+</html>
+

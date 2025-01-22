@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Strict Mode</title>
+</head>
+<body>
+  <script>
+    //Task 21
+   let str="StringExample";
+   console.log("String: ",str);
+   let num=1000;
+   console.log("Number: ",num);
+   let bool=true;
+   console.log("Boolean: ",bool);
+   let value=null;
+   console.log("Value: ",value);
+   let name;
+   console.log("Name: ",name);
+   let Person={
+    name:"sneha",
+    age:21
+   };
+   console.log("Object :",Person);
+
+  //Task 22
+  console.log("Type of str:", typeof(str)); 
+  console.log("Type of num:", typeof num);
+  console.log("Type of Boolean:", typeof bool); 
+  console.log("Type of value:", typeof value);  
+  console.log("Type of name:", typeof name); 
+  console.log("Type of Person:", typeof Person); 
+
+
+  //Task 23
+  
+  let id=Symbol("date");
+  console.log("Symbol:",id);
+  console.log("Type: ",typeof(id));
+
+  //Task 24
+  let testNull = null;
+console.log("Value:", testNull);
+console.log("Type:", typeof testNull);
+
+  //Task 25
+  function myfun(){
+    if(true){
+        var n=100;
+        let k=200;
+    }
+    console.log("var :",n);
+    try{
+    console.log("let :",k);}
+    catch(error){
+        console.log("Error:",error.message);
+    }
+  }
+  myfun();
+
+
+  </script>
+</body>
+</html>
+

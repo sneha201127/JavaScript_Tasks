@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Strict Mode</title>
+</head>
+<body>
+  <script>
+    // Task 11: 
+    undeclaredVar = "I am undeclared"; 
+    console.log("Without 'use strict':", undeclaredVar);
+
+    // Task 12: 
+    "use strict";
+    try {
+      undeclaredStrict = "This will cause an error";
+    } catch (error) {
+      console.error("With 'use strict':", error.message);
+    }
+
+    // Task 13: 
+    "use strict";
+    let myVariable = 42;
+    function myFunction(param) {
+      return param;
+    }
+    try {
+      delete myVariable; //error
+    } catch (error) {
+      console.error("Deleting variable:", error.message);
+    }
+    try {
+      delete myFunction; //error
+    } catch (error) {
+      console.error("Deleting function:", error.message);
+    }
+    try {
+      delete myFunction.arguments;//error
+    } catch (error) {
+      console.error("Deleting function parameter:", error.message);
+    }
+
+    // Task 14:
+    try {
+      undeclaredVariableNoStrict = "This works without 'use strict'";
+      console.log("Without 'use strict':", undeclaredVariableNoStrict);
+    } catch (error) {
+      console.error("Without 'use strict':", error.message);
+    }
+
+    "use strict";
+    try {
+      undeclaredVariableStrict = "This causes an error with 'use strict'";//error
+    } catch (error) {
+      console.error("With 'use strict':", error.message);
+    }
+
+    // Task 15: 
+    try {
+      let public = "This will cause an error"; 
+    } catch (error) {
+      console.error("Reserved keyword:", error.message);
+    }
+  </script>
+</body>
+</html>

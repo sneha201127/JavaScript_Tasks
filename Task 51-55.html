@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Basics</title>
+</head>
+<body>
+  <h1>Check the console for output!</h1>
+  <script>
+    // Task 51: 
+    const greet= (name)=> `Hello,${name}`;
+    console.log("Alice");
+    console.log("Sneha");
+    console.log("Mohan");
+    // Task 52: 
+    let add =(a,b)=>a+b;
+    console.log(add(45,100));
+    add=(a,b)=>a-b;
+    console.log(add(45,100));
+
+    // Task 53: 
+    const isEven=(num)=>num%2==0;
+    console.log(isEven(4));
+    console.log(isEven(35));
+    console.log(isEven(45673));
+    console.log(isEven(0));
+
+    // Task 54: 
+    const maxvalue=(a,b)=>{
+        return a>b?a:b;
+    }
+    console.log("Maxvalue in 20 and 60 is: ",maxvalue(20,60));
+    
+    // Task 55:
+
+    let func={
+        val:5,
+
+        multiTraditional:function(num){
+            return this.val*num;
+        },
+
+        multiArrow: (num)=>{
+            return this.val*num;
+        },
+    };
+    console.log(func.multiTraditional(40));
+    console.log(func.multiArrow(40));
+    </script>
+</body>
+</html>
